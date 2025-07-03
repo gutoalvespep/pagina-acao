@@ -77,7 +77,7 @@ function App() {
           {/* Main Image - Reduced to half size */}
           <div className="w-1/4 aspect-square rounded-2xl overflow-hidden shadow-2xl mx-auto">
             <img 
-              src="/WhatsApp Image 2025-07-03 at 00.51.01.jpeg" 
+              src="/main-image.jpeg" 
               alt="Imagem principal" 
               className="w-full h-full object-cover"
               onError={(e) => {
