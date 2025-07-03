@@ -56,7 +56,7 @@ function App() {
   }, []);
 
   const handleButtonClick = () => {
-    window.open('https://acaodeouro.com.br/campanha/4k-pra-voce?utm_source=organic&utm_campaign=&utm_medium=&utm_content=&utm_term=&subid=jLj6865bff68dba0f56d48b2ad0&sid2=&subid2=&subid3=&subid4=&subid5=&xcod=jLj6865bff68dba0f56d48b2ad0hQwK21wXxRhQwK21wXxRhQwK21wXxRhQwK21wXxR&sck=jLj6865bff68dba0f56d48b2ad0hQwK21wXxRhQwK21wXxRhQwK21wXxRhQwK21wXxR', '_blank');
+    window.open('https://acaodeouro.com.br/campanha/4k-pra-voce?utm_source=organic&utm_campaign=&utm_medium=&utm_content=&utm_term=&subid=jLj6865bff68dba0f56d48b2ad0&sid2=&subid2=&subid3=&subid4=&subid5=&xcod=jLj6865bff68dba0f56d48b2ad0hQwK21wXxRhQwK21wXxRhQwK21wXxR&sck=jLj6865bff68dba0f56d48b2ad0hQwK21wXxRhQwK21wXxRhQwK21wXxRhQwK21wXxR', '_blank');
   };
 
   return (
@@ -77,9 +77,13 @@ function App() {
           {/* Main Image - Reduced to half size */}
           <div className="w-1/4 aspect-square rounded-2xl overflow-hidden shadow-2xl mx-auto">
             <img 
-              src="/public/WhatsApp Image 2025-07-03 at 00.51.01.jpeg" 
+              src="/WhatsApp Image 2025-07-03 at 00.51.01.jpeg" 
               alt="Imagem principal" 
               className="w-full h-full object-cover"
+              onError={(e) => {
+                console.error('Erro ao carregar imagem:', e);
+                e.currentTarget.style.display = 'none';
+              }}
             />
           </div>
 
