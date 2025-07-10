@@ -56,7 +56,7 @@ function App() {
   }, []);
 
   const handleButtonClick = () => {
-    window.open('https://acaodeouro.com.br/campanha/1-real-pra-30-mil-no-pix-%F0%9F%A6%85%F0%9F%9A%80', '_blank');
+    window.open('https://www.acaodeouro.com.br/campanha/surpresinha-de-ouro---70-cotas-premiadas-no-valor-de-2mil-reais-e-20mil-pro-cliente-que-comprar-mais-bilhetes?utm_source=organicjLj686d8d871de0d0a7b7905ce4&utm_campaign=&utm_medium=&utm_content=&utm_term=&subid=organicjLj686d8d871de0d0a7b7905ce4&sid2=&subid2=&subid3=&subid4=&subid5=&xcod=organicjLj686d8d871de0d0a7b7905ce4hQwK21wXxRhQwK21wXxRhQwK21wXxRhQwK21wXxR&sck=organicjLj686d8d871de0d0a7b7905ce4hQwK21wXxRhQwK21wXxRhQwK21wXxRhQwK21wXxR', '_blank');
   };
 
   return (
