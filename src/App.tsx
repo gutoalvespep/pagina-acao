@@ -56,7 +56,7 @@ function App() {
   }, []);
 
   const handleButtonClick = () => {
-    window.open('https://www.acaodeouro.com.br/campanha/surpresinha-de-ouro---70-cotas-premiadas-no-valor-de-2mil-reais-e-20mil-pro-cliente-que-comprar-mais-bilhetes/687513be8e290', '_blank');
+    window.open('https://acaodeouro.com.br/campanha/hilux-ou-200mil-na-conta-se-o-ganhador-tiver-jogado-acima-de-5000-leva-um-fiat-argo-drive/68c0597bac4b2', '_blank');
   };
 
   return (
