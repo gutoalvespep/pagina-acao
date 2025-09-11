@@ -101,7 +101,7 @@ function App() {
               onClick={handleButtonClick}
               className="w-full bg-green-500 hover:bg-green-600 text-white font-black text-xl py-4 px-8 rounded-xl transition-all duration-300 animate-pulse-strong shadow-lg shadow-green-500/50 hover:shadow-green-500/70 transform hover:scale-105"
             >
-              👉 PARTICIPE AQUI
+              👉 COMUNIDADE AÇÃO DE OURO
             </button>
             
             {/* Arrow Text */}
