@@ -56,7 +56,7 @@ function App() {
   }, []);
 
   const handleButtonClick = () => {
-    window.open('https://acaodeouro.com.br/campanha/hilux-ou-200mil-na-conta-se-o-ganhador-tiver-jogado-acima-de-5000-leva-um-fiat-argo-drive/68c0597bac4b2', '_blank');
+    window.open('https://chat.whatsapp.com/G8dy2SSIBZbAkymxQ4RPgb?mode=ems_copy_t', '_blank');
   };
 
   return (
