@@ -2,6 +2,51 @@
 @tailwind components;
 @tailwind utilities;
 
+/* Fundo da página */
+body {
+  background-color: #446A34 !important;
+  color: #FFFFFF !important;
+}
+
+/* Botões principais */
+button,
+a.button,
+.btn,
+.button {
+  background-color: #F2B705 !important;
+  color: #000000 !important;
+  border: none !important;
+  box-shadow: 0px 4px 12px rgba(0, 0, 0, 0.3);
+  font-weight: bold;
+}
+
+/* Botão hover (quando passa o mouse) */
+button:hover,
+a.button:hover,
+.btn:hover,
+.button:hover {
+  background-color: #e6a400 !important;
+  color: #000000 !important;
+}
+
+/* Títulos */
+h1, h2, h3, h4 {
+  color: #FFFFFF !important;
+}
+
+/* Subtítulos ou descrições */
+p, span, li {
+  color: #C7C7C7 !important;
+}
+
+/* Notificações falsas e elementos de chamada */
+.notification,
+.access-counter {
+  background-color: #F2B705 !important;
+  color: #000000 !important;
+  font-weight: bold;
+}
+
 @layer components {
   .animate-pulse-strong {
     animation: pulse-strong 2s cubic-bezier(0.4, 0, 0.6, 1) infinite;
