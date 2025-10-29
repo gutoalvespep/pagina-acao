@@ -4,7 +4,6 @@ import { ChevronUp } from 'lucide-react';
 function App() {
   const [showPopup, setShowPopup] = useState(false);
   const [popupMessage, setPopupMessage] = useState('');
-  const [onlineCount, setOnlineCount] = useState(2851);
 
   const fakeNames = [
     'Luciana M. acabou de comprar!',
@@ -46,15 +45,6 @@ function App() {
     };
   }, []);
 
-  // Simulate dynamic online count
-  useEffect(() => {
-    const interval = setInterval(() => {
-      setOnlineCount(prev => prev + Math.floor(Math.random() * 3) - 1);
-    }, 10000);
-
-    return () => clearInterval(interval);
-  }, []);
-
   const handleButtonClick = () => {
     window.open('https://acaodeouro.com.br/campanha/hilux-ou-200mil-na-conta-se-o-ganhador-tiver-jogado-acima-de-5000-leva-um-fiat-argo-drive/68c0597bac4b2', '_blank');
   };
@@ -74,8 +64,8 @@ function App() {
       {/* Main Content */}
       <div className="min-h-screen flex flex-col items-center justify-center px-4 py-8">
         <div className="w-full max-w-md mx-auto text-center space-y-6">
-          {/* Main Image - Reduced to half size */}
-          <div className="w-1/4 aspect-square rounded-2xl overflow-hidden shadow-2xl mx-auto">
+          {/* Main Image - Increased size */}
+          <div className="w-2/3 aspect-square rounded-2xl overflow-hidden shadow-2xl mx-auto">
             <img 
               src="/main-image.jpeg" 
               alt="Imagem principal" 
@@ -85,14 +75,6 @@ function App() {
                 e.currentTarget.style.display = 'none';
               }}
             />
-          </div>
-
-          {/* Online Count */}
-          <div className="flex items-center justify-center space-x-2 text-green-400">
-            <div className="w-3 h-3 bg-green-400 rounded-full animate-pulse"></div>
-            <span className="text-lg font-bold">
-              {onlineCount.toLocaleString()} pessoas estão acessando esta página agora.
-            </span>
           </div>
 
           {/* Main CTA Button */}
